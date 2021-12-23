@@ -1,3 +1,7 @@
+# My Solution
+
+https://www.frontendmentor.io/solutions/stats-preview-card-component-using-html-and-css-9teTatqxY
+
 # Frontend Mentor - Stats preview card component
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
