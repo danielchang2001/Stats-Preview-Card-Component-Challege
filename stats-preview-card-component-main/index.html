@@ -29,7 +29,13 @@
       border-radius: 10px;
       position: absolute;
       top: 22%;
-      left: 14%;
+      left: 17.5%;
+    }
+    .txtHeader {
+      color: hsl(0, 0%, 100%); font-size: 36.5px; font-weight: 700;
+    }
+    .description {
+      color: hsla(0, 0%, 100%, 0.75); font-weight: 400; line-height: 1.6; margin-top: 30px; margin-bottom: 60px;
     }
     .left {
       background-color: hsl(244, 38%, 16%);
@@ -43,6 +49,7 @@
       grid-template-columns: 33% 33% 33%;
     }
     .right {
+      overflow: hidden;
       background-color: hsl(277, 64%, 61%);
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -54,15 +61,65 @@
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
+    .mobile {
+      display: none;
+    }
 
+    @media (max-width: 375px) {
+      .body {
+        text-align: center;
+      }
+      .grid {
+        display: table;
+        width: 325px;
+        height: 65%;
+        position: absolute;
+        left: 7%;
+        top: 46px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .left {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: table-footer-group;
+      }
+      .right {
+        display: table-header-group;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .imgHeader {
+        width: 100%;
+        height: 240px;
+        margin-bottom: -4px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+      }
+      .statsGrid {
+        display: block;
+      }
+      .txtHeader {
+        font-size: 28px;
+        padding-top: 20px;
+      }
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: static;
+      }
+    }
 
   </style>
 </head>
 <body style="font-size: 15px; font-family: 'Inter', sans-serif;">
   <div class="grid">
     <div class="left">
-      <h1 class="txtHeader" style="color: hsl(0, 0%, 100%); font-size: 36.5px; font-weight: 700;">Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help<br> your business grow.</h1>
-      <p style="color: hsla(0, 0%, 100%, 0.75); font-weight: 400; line-height: 1.6; margin-top: 30px; margin-bottom: 60px;">Discover the benefits of data analytics and make <br>better decisions regarding revenue, customer<br> experience, and overall efficiency.</p>
+      <h1 class="txtHeader">Get <span style="color: hsl(277, 64%, 61%);">insights</span> that <br class="mobile">help<br class="desktop"> your business <br class="mobile">grow.</h1>
+      <p class="description">Discover the benefits of data <br class="mobile">analytics and make <br class="desktop">better decisions<br class="mobile"> regarding revenue, customer<br class="desktop"> <br class="mobile">experience, and overall efficiency.</p>
       
       <div class="statsGrid" style="font-family: 'Inter', sans-serif;">
         <div class="companies">
